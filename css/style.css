@@ -1,0 +1,38 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--fundo-base: #020617; 
+--texto: #FFFEFF;
+--fonte: "Poppins", sans-serif;
+}
+
+body {
+background-color: var(--fundo-base);
+font-family: var(--fonte);
+color: var(--texto);
+
+min-height: 100vh;
+font-weight: 400;
+position:relative;
+
+overflow-x: hidden;
+}
+
+body::before {
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+
+z-index: -1;
+
+background:radial-gradient(circle at center, rgba(0, 209, 255, 0.2) 0%, rgba(27, 18, 53, 0.2) 85%);
+
+filter: blur(200px);
+}
