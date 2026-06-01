@@ -6,6 +6,8 @@ box-sizing: border-box;
 :root {
 --fundo-base: #020617; 
 --texto: #FFFEFF;
+--ciano: #00D1FF;
+--roxo: #5B2EFF;
 --fonte: "Poppins", sans-serif;
 }
 
@@ -35,4 +37,50 @@ z-index: -1;
 background:radial-gradient(circle at center, rgba(0, 209, 255, 0.2) 0%, rgba(27, 18, 53, 0.2) 85%);
 
 filter: blur(200px);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 900;    
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.container {
+    position: absolute;
+    top: 150px;
+    left: 48px;
+    right: 48px;
+}
+
+.quem-somos-conteudo1 {
+    margin-bottom: 55px;
+}
+
+.quem-somos-conteudo2 {
+    margin-bottom: 108px;
+}
+
+.quem-somos-conteudo3{
+    width: 100%;
+    left: 0;  
+    text-align: center;
+
+    margin-bottom: 48px;
+
+    background-image:linear-gradient(90deg, var(--ciano)0%, var(--roxo)55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
