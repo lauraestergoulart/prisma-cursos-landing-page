@@ -137,3 +137,53 @@ p {
 
   background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
+
+/* Mobile NavBar */
+.menu-mobile {
+  display:none;
+  cursor: pointer;
+}
+.menu-mobile div {
+  width: 30px;
+  height: 1px;
+  margin: 8px;
+  background-color: white;
+
+}
+
+@media (max-width: 1300px) {
+  .navbar {
+    right: 10px;
+    align-items: space-between;
+    justify-content: normal;
+    padding: 0px, 19px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    top: 20px;
+    left: 27px;
+    position: absolute
+  }
+  .logo {
+    width : 70px;
+    height: 39.36px;
+    position: absolute;
+    right: 220px;
+    top: 15px;
+  }
+  .btn-matricula {
+    width: 201px;
+    height: 37px;
+    font-size: 15.27px;
+    right: 10px;
+    top: 15px;
+    position: absolute;
+    
+    
+  }
+}
+
+
