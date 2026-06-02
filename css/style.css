@@ -9,6 +9,7 @@
   --texto: #fffeff;
   --ciano: #00d1ff;
   --roxo: #5b2eff;
+  --roxo-escuro: #371c99;
   --fonte: "Poppins", sans-serif;
 }
 
@@ -115,12 +116,12 @@ p {
   text-decoration: none;
   color: var(--texto);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .btn-matricula {
   width: 264px;
-  height: 59px;
+  height: 60px;
 
   display: flex;
   align-items: center;
@@ -134,5 +135,5 @@ p {
 
   border-radius: 20px;
 
-  background: radial-gradient(circle, #5b2eff 0%, #3f1ab5 100%);
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
