@@ -84,3 +84,76 @@ p {
     background-clip: text;
     color: transparent;
 }
+
+/* SECÇÃO DE DEPOIMENTOS */
+
+.depoimentos-topo {
+    margin-bottom: 55px;
+}
+
+.depoimentos-topo .gradient-text {
+    background-image: linear-gradient(90deg, var(--ciano) 0%, var(--roxo) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.depoimentos-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.card-depoimento {
+    background-color: #1e1b4b;
+    border-radius: 24px;
+    padding: 32px;
+    border: 1px solid rgba(0, 209, 255, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card-depoimento .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--texto);
+}
+
+.card-depoimento .avatar.mariana { background-color: #1ba1a1;}
+.card-depoimento .avatar.thiago { background-color: #d96b27;}
+.card-depoimento .avatar.paulo { background-color: #b52b85;}
+
+.card-depoimento .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-depoimento .username {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-depoimento .stars {
+    color: #ffcc00;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.card-depoimento .testimonial-text {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
