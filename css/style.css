@@ -84,3 +84,191 @@ p {
     background-clip: text;
     color: transparent;
 }
+
+.inicio{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 80px;
+
+    gap:40px;
+}
+
+.texto-inicio{
+    flex:1;
+    max-width:600px;
+}
+
+.slogan{
+    display:inline-block;
+
+    padding:14px 32px;
+
+    margin-bottom:25px;
+
+    border-radius:999px;
+
+    background:#1B1235;
+}
+
+.slogan span{
+    background:linear-gradient(
+        90deg,
+        #00D1FF 0%,
+        #5B2EFF 100%
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    font-size:16px;
+    font-weight:700;
+
+    text-transform:uppercase;
+}
+
+.texto-inicio h1{
+    font-size:64px;
+    font-weight:900;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+}
+
+.texto-inicio h1 span{
+    background:linear-gradient(
+        90deg,
+        #A855F7 0%,
+        #371C99 100%
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+}
+
+.texto-inicio p{
+    font-size:22px;
+    line-height:1.6;
+
+    margin-bottom:40px;
+}
+
+.texto-inicio button{
+    background:linear-gradient(
+        180deg,
+        #5B2EFF 0%,
+        #371C99 100%
+    );
+
+    color:#FFFEFF;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:20px 40px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.texto-inicio button:hover{
+    transform:translateY(-3px);
+}
+
+.mascote{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mascote img{
+    width:100%;
+    max-width:650px;
+
+    animation:flutuar 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0 0 20px rgba(0,209,255,.25))
+        drop-shadow(0 0 40px rgba(91,46,255,.35));
+}
+
+@keyframes flutuar{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@media (max-width:1024px){
+
+    .inicio{
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        padding:40px 30px;
+    }
+
+    .texto-inicio{
+        max-width:100%;
+    }
+
+    .texto-inicio h1{
+        font-size:52px;
+    }
+
+    .texto-inicio p{
+        max-width:100%;
+    }
+
+    .mascote img{
+        max-width:450px;
+    }
+}
+
+@media (max-width:768px){
+
+    .inicio{
+        padding:40px 20px;
+    }
+
+    .texto-inicio h1{
+        font-size:38px;
+    }
+
+    .texto-inicio p{
+        font-size:18px;
+    }
+
+    .texto-inicio button{
+        width:100%;
+        max-width:320px;
+    }
+
+    .mascote img{
+        max-width:280px;
+    }
+}
