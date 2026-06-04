@@ -1,86 +1,213 @@
-* {margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
---fundo-base: #020617; 
---texto: #FFFEFF;
---ciano: #00D1FF;
---roxo: #5B2EFF;
---fonte: "Poppins", sans-serif;
+  --fundo-base: #020617;
+  --texto: #fffeff;
+  --ciano: #00d1ff;
+  --roxo: #5b2eff;
+  --fonte: "Poppins", sans-serif;
 }
 
 body {
-background-color: var(--fundo-base);
-font-family: var(--fonte);
-color: var(--texto);
+  background-color: var(--fundo-base);
+  font-family: var(--fonte);
+  color: var(--texto);
 
-min-height: 100vh;
-font-weight: 400;
-position:relative;
+  min-height: 100vh;
+  font-weight: 400;
+  position: relative;
 
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body::before {
-content:"";
+  content: "";
 
-position:absolute;
-top:0;
-left:0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-z-index: -1;
+  z-index: -1;
 
-background:radial-gradient(circle at center, rgba(0, 209, 255, 0.2) 0%, rgba(27, 18, 53, 0.2) 85%);
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 209, 255, 0.2) 0%,
+    rgba(27, 18, 53, 0.2) 85%
+  );
 
-filter: blur(200px);
+  filter: blur(200px);
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 42px;
-    font-weight: 900;    
+  font-size: 42px;
+  font-weight: 900;
 }
 
 p {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: justify;
-    hyphens: auto;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .container {
-    position: absolute;
-    top: 150px;
-    left: 48px;
-    right: 48px;
+  position: absolute;
+  top: 150px;
+  left: 48px;
+  right: 48px;
 }
 
 .quem-somos-conteudo1 {
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .quem-somos-conteudo2 {
-    margin-bottom: 108px;
+  margin-bottom: 108px;
 }
 
-.quem-somos-conteudo3{
-    width: 100%;
-    left: 0;  
-    text-align: center;
+.quem-somos-conteudo3 {
+  width: 100%;
+  left: 0;
+  text-align: center;
 
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 
-    background-image:linear-gradient(90deg, var(--ciano)0%, var(--roxo)55%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(90deg, var(--ciano) 0%, var(--roxo) 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.success-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: center;
+
+  padding: 2rem;
+}
+
+.success-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.success-title span {
+  background: linear-gradient(90deg, #00d1ff 52%, #a855f7 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.success-mascot {
+  width: 420px;
+  margin: 1rem 0;
+}
+
+.success-subtitle {
+  color: #3bd9ff;
+  margin-bottom: 1rem;
+}
+
+.success-text {
+  color: white;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.success-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background: #5b2dff;
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 12px 28px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.success-navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+
+  list-style: none;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: linear-gradient(90deg, #5b2eff 0%, #371c99 100%);
+
+  border: none;
+  border-radius: 20px;
+
+  padding: 8px 16px;
+
+  cursor: pointer;
+}
+
+.perfil-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+}
+
+.perfil-btn span {
+  color: #00d1ff;
+
+  font-weight: 700;
+  font-size: 1rem;
 }
