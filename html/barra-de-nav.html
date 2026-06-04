@@ -35,13 +35,33 @@
 
     </nav>
 
-    <nav class="navbar">
-      <div class="menu-mobile">
+    <nav class="nav-mobile">
+      <div class="menu-hamburguer">
         <div class="linha1"></div>
         <div class="linha2"></div>
         <div class="linha3"></div>
       </div> 
+
+      <div class="menu-lista">
+        <ul>
+          <li><a href="index.html"> • Início</a></li>
+          <li><a href="cursos.html"> • Cursos</a></li>
+          <li><a href="quemsomos.html"> • Quem Somos?</a></li>
+          <li><a href="depoimentos.html"> • Depoimentos</a></li>
+          <li><a href="contato.html"> • Contato</a></li>
+        </ul>
+        <img src="../assets/logoPrisma2.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
+      </div>
     </nav>
-    
+
+    <script>
+      const hamburguer = document.querySelector(".menu-hamburguer");
+    const menu = document.querySelector(".menu-lista");
+
+    hamburguer.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+  });
+    </script>
+
   </body>
 </html>

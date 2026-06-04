@@ -139,16 +139,21 @@ p {
 }
 
 /* Mobile NavBar */
-.menu-mobile {
+.menu-hamburguer {
   display:none;
   cursor: pointer;
 }
-.menu-mobile div {
+.menu-hamburguer div {
   width: 30px;
   height: 1px;
   margin: 8px;
   background-color: white;
-
+}
+.menu-lista {
+  display: none;
+}
+.logo-menu-ativo {
+  display:none;
 }
 
 @media (max-width: 1300px) {
@@ -161,7 +166,7 @@ p {
   .nav-links {
     display: none;
   }
-  .menu-mobile {
+  .menu-hamburguer {
     display: block;
     top: 20px;
     left: 27px;
@@ -181,9 +186,48 @@ p {
     right: 10px;
     top: 15px;
     position: absolute;
-    
-    
+    z-index: 1;
   }
+  .menu-lista {
+    display: flex;
+    position: fixed;
+    font-size: 20px;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #251365 0%, #0f0829 100%);
+    transition: top 0.3s ease-in-out;
+    z-index: 30;
+  }
+  .menu-lista ul {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .menu-lista li {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 24px 0;
 }
-
-
+  .menu-lista a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.menu-lista.ativo {
+  left: 0;
+}
+.menu-lista.ativo .logo-menu-ativo {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  width: 30px;
+  height: 30px;
+  width: 108px;
+  height: 60.42px;
+}
+}
