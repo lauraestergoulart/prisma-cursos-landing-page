@@ -17,31 +17,25 @@ body {
   background-color: var(--fundo-base);
   font-family: var(--fonte);
   color: var(--texto);
-
   min-height: 100vh;
   font-weight: 400;
   position: relative;
-
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
   z-index: -1;
-
   background: radial-gradient(
     circle at center,
     rgba(0, 209, 255, 0.2) 0%,
     rgba(27, 18, 53, 0.2) 85%
   );
-
   filter: blur(200px);
 }
 
@@ -82,21 +76,17 @@ p {
   width: 100%;
   left: 0;
   text-align: center;
-
   margin-bottom: 48px;
-
   background-image: linear-gradient(90deg, var(--ciano) 0%, var(--roxo) 55%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-/* NAVBAR!!!!*/
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 32px 48px;
 }
 
@@ -122,38 +112,37 @@ p {
 .btn-matricula {
   width: 264px;
   height: 60px;
-
+  display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
   color: var(--texto);
-
   font-size: 24px;
   font-weight: 900;
-
   border-radius: 20px;
-
+  visibility: hidden;
   background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
-/* Mobile NavBar */
 .menu-hamburguer {
-  display:none;
+  display: none;
   cursor: pointer;
 }
+
 .menu-hamburguer div {
   width: 30px;
   height: 1px;
   margin: 8px;
   background-color: white;
 }
+
 .menu-lista {
   display: none;
 }
+
 .logo-menu-ativo {
-  display:none;
+  display: none;
 }
 
 @media (max-width: 1300px) {
@@ -161,7 +150,7 @@ p {
     right: 10px;
     align-items: space-between;
     justify-content: normal;
-    padding: 0px, 19px;
+    padding: 0px 19px;
   }
   .nav-links {
     display: none;
@@ -170,10 +159,10 @@ p {
     display: block;
     top: 20px;
     left: 27px;
-    position: absolute
+    position: absolute;
   }
   .logo {
-    width : 70px;
+    width: 70px;
     height: 39.36px;
     position: absolute;
     right: 220px;
@@ -212,43 +201,159 @@ p {
   .menu-lista li {
     border-bottom: 2px solid rgb(255, 255, 255);
     padding: 24px 0;
-}
+  }
   .menu-lista a {
     color: white;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
-}
-.menu-lista.ativo {
-  left: 0;
-}
-.menu-lista.ativo .logo-menu-ativo {
-  display: block;
-  position: absolute;
-  top: 26px;
-  left: 28px;
-  width: 30px;
-  height: 30px;
-  width: 108px;
-  height: 60.42px;
-}
-.botao-fechar {
-  position: absolute;
-  top: 22px;
-  right: 25px;
-  font-size: 50.93px;
-  cursor: pointer;
-}
-.btn-matricula-mob {
-  display: flex;
-  width: 342px;
-  height: 62.84px;
-  font-size: 26px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 11.92px;
-  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+  }
+  .menu-lista.ativo {
+    left: 0;
+  }
+  .menu-lista.ativo .logo-menu-ativo {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 28px;
+    width: 108px;
+    height: 60.42px;
+  }
+  .botao-fechar {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    font-size: 50.93px;
+    cursor: pointer;
+  }
+  .btn-matricula-mob {
+    display: flex;
+    width: 342px;
+    height: 62.84px;
+    font-size: 26px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 11.92px;
+    background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+  }
 }
 
+/* ==========================================================================
+   ESTRUTURA DE LOGIN REVISADA (DESKTOP & MOBILE)
+   ========================================================================= */
+
+.login-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 176px);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card-login {
+  background: rgba(13, 24, 49, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 2;
+}
+
+.titulo-login {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 45px;
+  background: linear-gradient(90deg, var(--ciano) 0%, var(--roxo) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.form-login .input-group {
+  margin-bottom: 28px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0 16px;
+  color: var(--texto);
+  font-family: var(--fonte);
+  font-size: 16px;
+  outline: none;
+}
+
+.btn-entrar {
+  width: 100%;
+  max-width: 260px;
+  height: 54px;
+  margin: 25px auto 0 auto;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--roxo) 0%, var(--roxo-escuro) 100%);
+  color: var(--texto);
+  font-family: var(--fonte);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(91, 46, 255, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mascote-login {
+  position: absolute;
+  left: 80%;
+  bottom: 0px;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+  animation: flutuarMascote 4s ease-in-out infinite;
+}
+
+@keyframes flutuarMascote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .card-login {
+    order: 1;
+    margin: 40px auto 10px auto;
+  }
+
+  .mascote-login {
+    position: static;
+    order: 2;
+    max-width: 280px;
+    margin: 0 auto 40px auto;
+    pointer-events: auto;
+    animation: none;
+  }
 }
