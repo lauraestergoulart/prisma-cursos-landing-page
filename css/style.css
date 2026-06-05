@@ -217,3 +217,163 @@ p {
   font-weight: 700;
   font-size: 1rem;
 }
+
+/* NAVBAR!!!!*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px;
+}
+
+.logo {
+  width: 200px;
+  height: 112px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--texto);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn-matricula {
+  width: 264px;
+  height: 60px;
+  display: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--texto);
+
+  font-size: 24px;
+  font-weight: 900;
+
+  border-radius: 20px;
+  visibility: hidden;
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+}
+
+/* Mobile NavBar */
+.menu-hamburguer {
+  display:none;
+  cursor: pointer;
+}
+.menu-hamburguer div {
+  width: 30px;
+  height: 1px;
+  margin: 8px;
+  background-color: white;
+}
+.menu-lista {
+  display: none;
+}
+.logo-menu-ativo {
+  display:none;
+}
+
+@media (max-width: 1300px) {
+  .navbar {
+    right: 10px;
+    align-items: space-between;
+    justify-content: normal;
+    padding: 0px, 19px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu-hamburguer {
+    display: block;
+    top: 20px;
+    left: 27px;
+    position: absolute
+  }
+  .logo {
+    width : 70px;
+    height: 39.36px;
+    position: absolute;
+    right: 220px;
+    top: 15px;
+  }
+  .btn-matricula {
+    width: 201px;
+    height: 37px;
+    font-size: 15.27px;
+    right: 10px;
+    top: 15px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    visibility: hidden;
+  }
+  .menu-lista {
+    display: flex;
+    position: fixed;
+    font-size: 20px;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #251365 0%, #0f0829 100%);
+    transition: top 0.3s ease-in-out;
+    z-index: 30;
+  }
+  .menu-lista ul {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .menu-lista li {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 24px 0;
+}
+  .menu-lista a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.menu-lista.ativo {
+  left: 0;
+}
+.menu-lista.ativo .logo-menu-ativo {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  width: 30px;
+  height: 30px;
+  width: 108px;
+  height: 60.42px;
+}
+.botao-fechar {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  font-size: 50.93px;
+  cursor: pointer;
+}
+.btn-matricula.mob {
+  width: 201px;
+  height: 37px;
+  font-size: 26px;
+  top: 15px;
+  position: absolute;
+  display: none;
+}
+
+}
