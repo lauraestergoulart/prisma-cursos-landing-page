@@ -85,7 +85,7 @@ p {
     color: transparent;
 }
 
-/* Estilos para a seção de Missões */
+
 
 .container-missoes {
     max-width: 1200px;
@@ -218,17 +218,14 @@ p {
 
 .carrossel-container {
     width: 100%;
-    overflow-x: auto; /* Ativa a rolagem horizontal */
-    padding: 12px 4px 24px 4px; /* Evita cortar a sombra ou efeitos de hover dos cards */
-    scroll-snap-type: x mandatory; /* Efeito magnético de trava ao arrastar */
+    overflow-x: auto;
+    padding: 12px 4px 24px 4px;
+    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    
-    /* Configuração da barra de rolagem (Firefox) */
     scrollbar-width: thin;
     scrollbar-color: rgba(91, 46, 255, 0.4) transparent;
 }
 
-/* Customização da barra de rolagem (Chrome, Safari e Edge) */
 .carrossel-container::-webkit-scrollbar {
     height: 6px;
 }
