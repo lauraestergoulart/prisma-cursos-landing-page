@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     font-weight: 400;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body::before {
@@ -647,3 +647,23 @@ p {
   background: var(--roxo); 
   transform: scale(1.02);         
 }
+
+@media (min-width: 769px) {
+  html, body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto; 
+    height: auto;   
+  }
+}
+
+@media (max-width: 768px) {
+    .area-loja {
+        width: auto;
+    overflow-x: hidden;}
+
+    }
