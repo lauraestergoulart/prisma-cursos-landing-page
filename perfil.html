@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <title>Perfil</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+   
+<header>
+
+    <nav class="navbar">
+        <img src="assets/logo.svg" alt="Logo Prisma" class="logo" />
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="quemsomos.html">Quem Somos?</a></li>
+            <li><a href="depoimentos.html">Depoimentos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="btn-perfil-nav"> Perfil </a>
+    </nav>
+
+
+    <nav class="nav-mobile">
+        <div class="menu-hamburguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div> 
+
+        <div class="menu-lista">
+            <ul>
+                <li><a href="index.html"> • Início</a></li>
+                <li><a href="cursos.html"> • Cursos</a></li>
+                <li><a href="quemsomos.html"> • Quem Somos?</a></li>
+                <li><a href="depoimentos.html"> • Depoimentos</a></li>
+                <li><a href="contato.html"> • Contato</a></li>
+            </ul>
+            <img src="assets/logo.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
+        </div>
+    </nav>
+</header>
+        <main class="dashboard-container">
+    
+            <section class="card area-perfil">
+                <h2>DADOS PESSOAIS</h2>
+                <img src="assets/fotoPerfil.svg" alt="fotoPerfil" class="foto-perfil">
+                <form>
+                    <input type="text" placeholder="Nome completo">
+                    <input type="email" placeholder="e-mail">
+                    <textarea placeholder="Bio: uma pequena descrição da sua jornada"></textarea>
+                    <button type="button" class="btn-ciano">Mudar senha</button>
+                </form>
+            </section>
+
+            <section class="card area-cursos">
+                <h2>CURSOS EM ANDAMENTO</h2>
+        
+                <div class="curso-item">
+                    <div class="curso-info">
+                        <span>Orientação à objetos</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-progresso" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <div class="curso-info">
+                        <span>Estruturas de dados</span>
+                        <span>23%</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-progresso" style="width: 23%;"></div>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <div class="curso-info">
+                        <span>Modelagem e animação 3D</span>
+                        <span>79%</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-progresso" style="width: 79%;"></div>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <div class="curso-info">
+                        <span>UI/UX Design</span>
+                        <span>44%</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-progresso" style="width: 44%;"></div>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <div class="curso-info">
+                        <span>Algoritmo e programação</span>
+                        <span>98%</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-progresso" style="width: 98%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card area-xp" style="background: transparent; box-shadow: none; padding: 0;">
+                <div class="card-conquistas-xp">
+                    <h2>CONQUISTAS DE XP</h2>
+                    <div class="xp-total" id="xp-contador">0</div>
+                    <p>XP TOTAL</p>
+                </div>
+                <img src="assets/mascoteJoia.svg" alt="Mascote Prisma" class="mascote">
+            </section>
+
+            <div class="area-missoes">
+                <button type="button" class="btn-roxo">MISSÕES</button>
+            </div>
+
+            <section class="card area-loja">
+                <h2>LOJA DE RECOMPENSAS🏆</h2>
+                <div class="cards-loja-container">
+                    
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Cupom 10%</p>
+                        <span>5000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="5000">Resgatar</button>
+                    </div>
+
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Cupom 30%</p>
+                        <span>15000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="15000">Resgatar</button>
+                    </div>
+
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Caneca do mascote</p>
+                        <span>20000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="20000">Resgatar</button>
+                    </div>
+
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Moldura de perfil</p>
+                        <span>2000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="2000">Resgatar</button>
+                    </div>
+
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Masterclass</p>
+                        <span>7000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="7000">Resgatar</button>
+                    </div>
+
+                    <div class="card-recompensa">
+                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <p>Headphone</p>
+                        <span>35000 xp</span>
+                        <button type="button" class="btn-resgatar" data-custo="35000">Resgatar</button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <script src="perfil.js"></script>
+        <script src=“../js/xp-perfil.js”></script>
+    </body>
+</html>
