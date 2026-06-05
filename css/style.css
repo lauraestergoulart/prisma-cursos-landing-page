@@ -84,3 +84,44 @@ p {
     background-clip: text;
     color: transparent;
 }
+
+/* Cursos */
+
+.container-cursos {
+    display: inline-flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    background-color: rgba(43, 179, 120, 0.1);
+    font-size: 40px;
+}
+.container-cursos a {
+    justify-content: center;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    display: block-flex;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.card a {
+    justify-content: center;
+}
+.card h3 {
+    font-size: 40px;
+    font-weight: extra-bold;
+}
+.btn-cursos {
+    display: inline-flex;
+    font-size: 20px;
+    background-color: var(--roxo);
+    border: solid var(--roxo);
+    border-radius: 20px;
+    padding: 16px 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    
+}
