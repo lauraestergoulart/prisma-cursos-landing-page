@@ -88,23 +88,43 @@ p {
 /* Cursos */
 
 .container-cursos {
-    display: inline-flex;
+    display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding: 50px 50px;
     background-color: rgba(43, 179, 120, 0.1);
     font-size: 40px;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 24px;
+    -webkit-overflow-scrolling: touch; 
+    scroll-behavior: smooth;
 }
+
+.titulos-pagina-cursos {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.container-cursos::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
 .container-cursos a {
     justify-content: center;
 }
 .card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
+    min-height: 250px;
     display: block-flex;
     width: 400px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
+    justify-content: space-between;
+    padding: 20px;
 }
 .card a {
     justify-content: center;
@@ -122,6 +142,6 @@ p {
     padding: 16px 12px;
     text-decoration: none;
     color: white;
-    font-weight: 900;
+    font-weight: 900;   
     
 }
