@@ -9,10 +9,7 @@
   --texto: #fffeff;
   --ciano: #00d1ff;
   --roxo: #5b2eff;
-<<<<<<< HEAD
-=======
   --roxo-escuro: #371c99;
->>>>>>> 4ea2b15c4cb2f54440de4981e99391b6815e7077
   --fonte: "Poppins", sans-serif;
 }
 
@@ -20,10 +17,6 @@ body {
   background-color: var(--fundo-base);
   font-family: var(--fonte);
   color: var(--texto);
-<<<<<<< HEAD
-
-=======
->>>>>>> 4ea2b15c4cb2f54440de4981e99391b6815e7077
   min-height: 100vh;
   font-weight: 400;
   position: relative;
@@ -402,17 +395,17 @@ p {
     }
   }
 }
-  .btn-matricula-mob {
-    display: flex;
-    width: 342px;
-    height: 62.84px;
-    font-size: 26px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 11.92px;
-    background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
-  }
+.btn-matricula-mob {
+  display: flex;
+  width: 342px;
+  height: 62.84px;
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 11.92px;
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+}
 
 /* ==========================================================================
    ESTRUTURA DE LOGIN REVISADA (DESKTOP & MOBILE)
@@ -486,7 +479,9 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(91, 46, 255, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .mascote-login {
@@ -502,7 +497,8 @@ p {
 }
 
 @keyframes flutuarMascote {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
