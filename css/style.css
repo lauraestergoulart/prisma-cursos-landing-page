@@ -393,9 +393,6 @@ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
     max-width: 280px;
   }
 }
-/* ========================= */
-/* PÁGINA DEPOIMENTOS */
-/* ========================= */
 
 .depoimentos{
     max-width:1200px;
@@ -467,8 +464,6 @@ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 
     color:#FFFEFF;
 }
-
-/* Cores dos perfis */
 
 .avatar-mariana{
     background:#29A8C9;
