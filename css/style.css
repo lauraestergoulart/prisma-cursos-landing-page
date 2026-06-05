@@ -230,4 +230,18 @@ p {
   width: 108px;
   height: 60.42px;
 }
+.botao-fechar {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  font-size: 50.93px;
+  cursor: pointer;
+}
+.btn-matricula.mob {
+  width: 201px;
+  height: 37px;
+  font-size: 26px;
+  top: 15px;
+  position: absolute;
+}
 }

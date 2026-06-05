@@ -51,16 +51,26 @@
           <li><a href="contato.html"> • Contato</a></li>
         </ul>
         <img src="../assets/logoPrisma2.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
+        <div class="botao-fechar">X
+        </div>
+        <div class="btn-matricula-mob">
+          <a href="#"> Faça sua matrícula </a>
+        </div>
       </div>
     </nav>
 
     <script>
       const hamburguer = document.querySelector(".menu-hamburguer");
-    const menu = document.querySelector(".menu-lista");
+      const menu = document.querySelector(".menu-lista");
+      const fechar = document.querySelector(".botao-fechar");
 
-    hamburguer.addEventListener("click", () => {
-    menu.classList.toggle("ativo");
-  });
+      hamburguer.addEventListener("click", () => {
+      menu.classList.toggle("ativo");
+
+      fechar.addEventListener("click", () => {
+      menu.classList.remove("ativo");
+    });
+    });
     </script>
 
   </body>
