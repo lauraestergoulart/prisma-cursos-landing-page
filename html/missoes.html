@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Quem Somos - Prisma Cursos</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <main class="container-missoes">
+      <h1 class="titulo-pagina-missoes">Missões</h1>
+
+      <section class="secao-missoes">
+        <h2 class="titulo-missao">Missões diárias e semanais</h2>
+        <div class="grid-missoes">
+          <div class="card-missao">
+            <div class="icone-missao">✓</div>
+            <span class="xp">+10xp</span>
+            <h3 class="titulo-card-missao">Check-in Diário</h3>
+            <p class="desc-missao">Fazer login no site hoje.</p>
+            <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+            <button
+              class="botao-concluido"
+              data-missao="check-in-diario"
+              onclick="alternarStatus(this)"
+            >
+              concluída
+            </button>
+          </div>
+
+          <div class="card-missao">
+            <div class="icone-missao">✓</div>
+            <span class="xp">+100xp</span>
+            <h3 class="titulo-card-missao">Combo Semanal</h3>
+            <p class="desc-missao">Fazer login 7 dias seguidos.</p>
+            <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+            <button
+              class="botao-pendente"
+              data-missao="combo-semanal"
+              onclick="alternarStatus(this)"
+            >
+              pendente
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-missoes">
+        <h2 class="titulo-missao">Missões de Onboarding (iniciantes)</h2>
+        <div class="grid-missoes">
+          <div class="card-missao">
+            <div class="icone-missao">✓</div>
+            <span class="xp">+10xp</span>
+            <h3 class="titulo-card-missao">Identidade Visual</h3>
+            <p class="desc-missao">Fazer upload de uma foto no perfil.</p>
+            <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+            <button
+              class="botao-pendente"
+              data-missao="identidade-visual"
+              onclick="alternarStatus(this)"
+            >
+              pendente
+            </button>
+          </div>
+
+          <div class="card-missao">
+            <div class="icone-missao">✓</div>
+            <span class="xp">+100xp</span>
+            <h3 class="titulo-card-missao">Bio Completa</h3>
+            <p class="desc-missao">Preencher a descrição idade e interesses.</p>
+            <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+            <button
+              class="botao-pendente"
+              data-missao="bio-completa"
+              onclick="alternarStatus(this)"
+            >
+              pendente
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-missoes">
+        <h2 class="titulo-missao">Missões acadêmicas</h2>
+        <div class="carrossel-container">
+          <div class="carrossel-track">
+            <div class="card-missao">
+              <div class="icone-missao">✓</div>
+              <span class="xp">+300xp</span>
+              <h3 class="titulo-card-missao">O Primeiro Passo</h3>
+              <p class="desc-missao">
+                Assistir à primeira aula do seu curso até o final.
+              </p>
+              <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+              <button
+                class="botao-pendente"
+                data-missao="primeiro-passo"
+                onclick="alternarStatus(this)"
+              >
+                pendente
+              </button>
+            </div>
+
+            <div class="card-missao">
+              <div class="icone-missao">✓</div>
+              <span class="xp">+500xp</span>
+              <h3 class="titulo-card-missao">Conquistador de Módulos</h3>
+              <p class="desc-missao">
+                Concluir 100% de um módulo (vídeos + materiais).
+              </p>
+              <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+              <button
+                class="botao-pendente"
+                data-missao="conquistador-de-modulos"
+                onclick="alternarStatus(this)"
+              >
+                pendente
+              </button>
+            </div>
+
+            <div class="card-missao">
+              <div class="icone-missao">✓</div>
+              <span class="xp">+800xp</span>
+              <h3 class="titulo-card-missao">Aluno Nota 10</h3>
+              <p class="desc-missao">
+                Acertar todas as questões da prova final de um módulo de
+                primeira.
+              </p>
+              <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+              <button
+                class="botao-pendente"
+                data-missao="aluno-nota-10"
+                onclick="alternarStatus(this)"
+              >
+                pendente
+              </button>
+            </div>
+
+            <div class="card-missao">
+              <div class="icone-missao">✓</div>
+              <span class="xp">+2500xp</span>
+              <h3 class="titulo-card-missao">Mestre do Curso</h3>
+              <p class="desc-missao">
+                Concluir um curso inteiro e emitir o certificado.
+              </p>
+              <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+              <button
+                class="botao-pendente"
+                data-missao="mestre-do-curso"
+                onclick="alternarStatus(this)"
+              >
+                pendente
+              </button>
+            </div>
+
+            <div class="card-missao">
+              <div class="icone-missao">✓</div>
+              <span class="xp">+6000xp</span>
+              <h3 class="titulo-card-missao">Trilha Épica</h3>
+              <p class="desc-missao">Concluir 2 ou mais cursos.</p>
+              <!-- Para o botão funcionar, é necessário adicionar a função JavaScript correspondente -->
+              <button
+                class="botao-pendente"
+                data-missao="trilha-epica"
+                onclick="alternarStatus(this)"
+              >
+                pendente
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/missoes.js"></script>
+  </body>
+</html>
