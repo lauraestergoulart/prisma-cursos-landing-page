@@ -105,6 +105,7 @@ p {
 .titulos-pagina-cursos {
     text-align: left;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .container-cursos::-webkit-scrollbar-track {
@@ -144,4 +145,14 @@ p {
     color: white;
     font-weight: 900;   
     
+}
+
+.desc-pagina-cursos {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-right: right;
 }
