@@ -90,7 +90,6 @@ p {
   color: transparent;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -154,7 +153,7 @@ p {
 }
 
 .btn-perfil img {
- width: 55px;
+  width: 55px;
   height: 55px;
 
   object-fit: contain;
@@ -172,7 +171,6 @@ p {
   align-items: flex-end;
   gap: 16px;
 }
-
 
 .inicio {
   min-height: calc(100vh - 176px);
@@ -210,7 +208,7 @@ p {
 
   border-radius: 999px;
 
-background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
 .slogan span {
@@ -253,7 +251,7 @@ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
 .texto-inicio button {
- background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
   color: #fffeff;
 
   border: none;
@@ -316,33 +314,15 @@ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
   transform: translateX(-50%);
 
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 80px;
 }
 
-.beneficio {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  text-align: center;
-}
-
-.beneficio h4 {
-  font-size: 14px;
-  font-weight: 700;
-
-  color: var(--texto);
-
-  margin-bottom: 4px;
-}
-
-.beneficio p {
-  font-size: 12px;
-
-  color: #b8b8d0;
-
-  margin: 0;
+.beneficios img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 1024px) {
@@ -394,142 +374,133 @@ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
   }
 }
 
-.depoimentos{
-    max-width:1200px;
+.depoimentos {
+  max-width: 1200px;
 
-    margin:0 auto;
+  margin: 0 auto;
 
-    padding:40px 30px 80px;
+  padding: 40px 30px 80px;
 }
 
-.titulo-depoimentos{
-    text-align:center;
+.titulo-depoimentos {
+  text-align: center;
 
-    margin-bottom:50px;
+  margin-bottom: 50px;
 
-    font-size:48px;
-    font-weight:800;
+  font-size: 48px;
+  font-weight: 800;
 
-    line-height:1.2;
+  line-height: 1.2;
 
-    background:linear-gradient(
-        90deg,
-        #00D1FF 0%,
-        #5B2EFF 100%
-    );
+  background: linear-gradient(90deg, #00d1ff 0%, #5b2eff 100%);
 
-    -webkit-background-clip:text;
-    background-clip:text;
+  -webkit-background-clip: text;
+  background-clip: text;
 
-    color:transparent;
+  color: transparent;
 }
 
-.card-depoimento{
-    background:linear-gradient(
-        180deg,
-        #5B2EFF 0%,
-        #371C99 100%
-    );
+.card-depoimento {
+  background: linear-gradient(180deg, #5b2eff 0%, #371c99 100%);
 
-    border-radius:30px;
+  border-radius: 30px;
 
-    padding:30px;
+  padding: 30px;
 
-    margin-bottom:30px;
+  margin-bottom: 30px;
 
-    box-shadow:0 8px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
-.topo-card{
-    display:flex;
-    align-items:center;
+.topo-card {
+  display: flex;
+  align-items: center;
 
-    gap:15px;
+  gap: 15px;
 
-    margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
-.avatar{
-    width:60px;
-    height:60px;
+.avatar {
+  width: 60px;
+  height: 60px;
 
-    border-radius:50%;
+  border-radius: 50%;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size:28px;
-    font-weight:700;
+  font-size: 28px;
+  font-weight: 700;
 
-    color:#FFFEFF;
+  color: #fffeff;
 }
 
-.avatar-mariana{
-    background:#288CA2;
+.avatar-mariana {
+  background: #288ca2;
 }
 
-.avatar-thiago{
-    background:#A24028;
+.avatar-thiago {
+  background: #a24028;
 }
 
-.avatar-paulo{
-    background:#A22892;
+.avatar-paulo {
+  background: #a22892;
 }
 
-.topo-card h2{
-    font-size:32px;
-    font-weight:800;
+.topo-card h2 {
+  font-size: 32px;
+  font-weight: 800;
 
-    margin-right:10px;
+  margin-right: 10px;
 }
 
-.estrelas{
-    font-size:28px;
+.estrelas {
+  font-size: 28px;
 }
 
-.card-depoimento p{
-    font-size:20px;
+.card-depoimento p {
+  font-size: 20px;
 
-    line-height:1.7;
+  line-height: 1.7;
 
-    text-align:left;
+  text-align: left;
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .depoimentos {
+    padding: 30px 20px 60px;
+  }
 
-    .depoimentos{
-        padding:30px 20px 60px;
-    }
+  .titulo-depoimentos {
+    font-size: 32px;
+  }
 
-    .titulo-depoimentos{
-        font-size:32px;
-    }
+  .topo-card {
+    flex-wrap: wrap;
+  }
 
-    .topo-card{
-        flex-wrap:wrap;
-    }
+  .topo-card h2 {
+    font-size: 24px;
+  }
 
-    .topo-card h2{
-        font-size:24px;
-    }
+  .card-depoimento {
+    padding: 20px;
+  }
 
-    .card-depoimento{
-        padding:20px;
-    }
+  .card-depoimento p {
+    font-size: 16px;
+  }
 
-    .card-depoimento p{
-        font-size:16px;
-    }
+  .avatar {
+    width: 50px;
+    height: 50px;
 
-    .avatar{
-        width:50px;
-        height:50px;
+    font-size: 22px;
+  }
 
-        font-size:22px;
-    }
-
-    .estrelas{
-        font-size:22px;
-    }
+  .estrelas {
+    font-size: 22px;
+  }
 }
