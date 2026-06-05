@@ -121,7 +121,7 @@ p {
 
 .btn-matricula {
   width: 264px;
-  height: 60px;
+  height: 59px;
 
   display: flex;
   align-items: center;
@@ -155,8 +155,9 @@ p {
 }
 
 .btn-perfil img {
-  width: 50px;
-  height: 50px;
+ width: 55px;
+  height: 55px;
+
   object-fit: contain;
 }
 
@@ -199,7 +200,7 @@ p {
 
   border-radius: 999px;
 
-  background: #1b1235;
+background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
 .slogan span {
@@ -242,8 +243,7 @@ p {
 }
 
 .texto-inicio button {
-  background: linear-gradient(180deg, #5b2eff 0%, #371c99 100%);
-
+ background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
   color: #fffeff;
 
   border: none;
