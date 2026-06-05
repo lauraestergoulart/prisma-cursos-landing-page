@@ -95,11 +95,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 
   text-align: center;
 
   padding: 2rem;
+  padding-top: 80px;
 }
 
 .success-title {
@@ -140,7 +140,7 @@ p {
 .success-buttons {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: -1rem;
 }
 
 .btn-primary {
@@ -267,7 +267,7 @@ p {
 
 /* Mobile NavBar */
 .menu-hamburguer {
-  display:none;
+  display: none;
   cursor: pointer;
 }
 .menu-hamburguer div {
@@ -280,7 +280,7 @@ p {
   display: none;
 }
 .logo-menu-ativo {
-  display:none;
+  display: none;
 }
 
 @media (max-width: 1300px) {
@@ -297,10 +297,10 @@ p {
     display: block;
     top: 20px;
     left: 27px;
-    position: absolute
+    position: absolute;
   }
   .logo {
-    width : 70px;
+    width: 70px;
     height: 39.36px;
     position: absolute;
     right: 220px;
@@ -339,52 +339,54 @@ p {
   .menu-lista li {
     border-bottom: 2px solid rgb(255, 255, 255);
     padding: 24px 0;
-}
+  }
   .menu-lista a {
     color: white;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
-}
-.menu-lista.ativo {
-  left: 0;
-}
-.menu-lista.ativo .logo-menu-ativo {
-  display: block;
-  position: absolute;
-  top: 26px;
-  left: 28px;
-  width: 30px;
-  height: 30px;
-  width: 108px;
-  height: 60.42px;
-}
-.botao-fechar {
-  position: absolute;
-  top: 22px;
-  right: 25px;
-  font-size: 50.93px;
-  cursor: pointer;
-}
-.btn-matricula.mob {
-  width: 201px;
-  height: 37px;
-  font-size: 26px;
-  top: 15px;
-  position: absolute;
-  display: none;
-}
-
-@media (min-width: 769px) {
-  html, body {
-    overflow: hidden;
   }
-}
-
-@media (max-width: 768px) {
-  html, body {
-    overflow: auto; 
-    height: auto;   
+  .menu-lista.ativo {
+    left: 0;
   }
-}
+  .menu-lista.ativo .logo-menu-ativo {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 28px;
+    width: 30px;
+    height: 30px;
+    width: 108px;
+    height: 60.42px;
+  }
+  .botao-fechar {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    font-size: 50.93px;
+    cursor: pointer;
+  }
+  .btn-matricula.mob {
+    width: 201px;
+    height: 37px;
+    font-size: 26px;
+    top: 15px;
+    position: absolute;
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    html,
+    body {
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 768px) {
+    html,
+    body {
+      overflow: auto;
+      height: auto;
+    }
+  }
 }
