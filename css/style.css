@@ -191,6 +191,7 @@ p {
   .menu-lista {
     display: flex;
     position: fixed;
+    flex-direction: column;
     font-size: 20px;
     top: 0px;
     left: -100%;
@@ -198,9 +199,10 @@ p {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, #251365 0%, #0f0829 100%);
+    background: radial-gradient(circle, #1f1157 0%, #05030e 100%);
     transition: top 0.3s ease-in-out;
     z-index: 30;
+    gap: 40px;
   }
   .menu-lista ul {
     list-style: none;
@@ -237,11 +239,16 @@ p {
   font-size: 50.93px;
   cursor: pointer;
 }
-.btn-matricula.mob {
-  width: 201px;
-  height: 37px;
+.btn-matricula-mob {
+  display: flex;
+  width: 342px;
+  height: 62.84px;
   font-size: 26px;
-  top: 15px;
-  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 11.92px;
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
+
 }
