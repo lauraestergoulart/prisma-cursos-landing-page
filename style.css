@@ -667,3 +667,34 @@ p {
     overflow-x: hidden;}
 
     }
+   
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;       
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 15px 24px;        
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .logo {
+    max-width: 120px;         
+    height: auto;
+  }
+
+  
+  .nav-links {
+    display: none;
+  }
+
+  
+  .btn-perfil-nav {
+    padding: 8px 20px;         
+    font-size: 14px;           
+    white-space: nowrap;  
+    margin-left: auto;     
+  }
+}
