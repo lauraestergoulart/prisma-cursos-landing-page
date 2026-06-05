@@ -83,6 +83,136 @@ p {
   color: transparent;
 }
 
+.success-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 2rem;
+  padding-top: 80px;
+}
+
+.success-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  margin-top: -10px;
+}
+
+.success-title span {
+  background: linear-gradient(90deg, #00d1ff 52%, #8a38f5 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.success-mascot {
+  width: 500px;
+  margin: 1rem 0;
+  margin-top: -40px;
+}
+
+.success-subtitle {
+  color: #3bd9ff;
+  margin-bottom: 1rem;
+  margin-top: -20;
+}
+
+.success-text {
+  color: white;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-top: -10px;
+}
+
+.success-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: -1rem;
+}
+
+.btn-primary {
+  background: #5b2dff;
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 18px 40px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  font-size: 1.1rem;
+}
+
+.success-navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+
+  list-style: none;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: linear-gradient(90deg, #5b2eff 0%, #371c99 100%);
+
+  border: none;
+  border-radius: 20px;
+
+  padding: 8px 16px;
+
+  cursor: pointer;
+}
+
+.perfil-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+}
+
+.perfil-btn span {
+  color: #00d1ff;
+
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* NAVBAR!!!!*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -113,6 +243,17 @@ p {
   width: 264px;
   height: 60px;
   display: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--texto);
+
+  font-size: 24px;
+  font-weight: 900;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,11 +266,11 @@ p {
   background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
+/* Mobile NavBar */
 .menu-hamburguer {
   display: none;
   cursor: pointer;
 }
-
 .menu-hamburguer div {
   width: 30px;
   height: 1px;
@@ -176,11 +317,12 @@ p {
     top: 15px;
     position: absolute;
     z-index: 1;
+    display: none;
+    visibility: hidden;
   }
   .menu-lista {
     display: flex;
     position: fixed;
-    flex-direction: column;
     font-size: 20px;
     top: 0px;
     left: -100%;
@@ -188,6 +330,9 @@ p {
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(circle, #251365 0%, #0f0829 100%);
+    transition: top 0.3s ease-in-out;
+    z-index: 30;
     background: radial-gradient(circle, #1f1157 0%, #05030e 100%);
     transition: top 0.3s ease-in-out;
     z-index: 30;
@@ -226,17 +371,40 @@ p {
     font-size: 50.93px;
     cursor: pointer;
   }
-  .btn-matricula-mob {
-    display: flex;
-    width: 342px;
-    height: 62.84px;
+  .btn-matricula.mob {
+    width: 201px;
+    height: 37px;
     font-size: 26px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 11.92px;
-    background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+    top: 15px;
+    position: absolute;
+    display: none;
   }
+
+  @media (min-width: 769px) {
+    html,
+    body {
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 768px) {
+    html,
+    body {
+      overflow: auto;
+      height: auto;
+    }
+  }
+}
+.btn-matricula-mob {
+  display: flex;
+  width: 342px;
+  height: 62.84px;
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 11.92px;
+  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
 /* ==========================================================================
@@ -311,7 +479,9 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(91, 46, 255, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .mascote-login {
@@ -327,7 +497,8 @@ p {
 }
 
 @keyframes flutuarMascote {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
