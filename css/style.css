@@ -130,6 +130,9 @@ p {
     align-items: flex-start;
     height: 100%;
     transition: all 0.3 s ease;
+    min-height: 600px;
+    width: 320px;
+    flex-shrink: 0;
 }
 
 .card-missao:hover {
@@ -238,6 +241,7 @@ p {
 }
 
 .carrossel-track {
-    display: flex; /* Coloca os cards em linha horizontal */
-    gap: 24px; /* Espaçamento idêntico entre cada card */
+    display: flex; 
+    gap: 24px; 
+    align-items: stretch;
 }
