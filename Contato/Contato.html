@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Contato - Prisma Cursos</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="assets/logoPrisma2.svg" alt="Logo Prisma" class="logo" />
+        <ul class="nav-links">
+            <li><a href="index.html"><u>Início</u></a></li>
+            <li><a href="cursos.html"><u>Cursos</u></a></li>
+            <li><a href="quemsomos.html"><u>Quem Somos?</u></a></li>
+            <li><a href="depoimentos.html"><u>Depoimentos</u></a></li>
+            <li><a href="contato.html"><u>Contato</u></a></li>
+        </ul>
+        <a href="#" class="btn-matricula"> Faça sua matrícula </a>
+    </nav>
+
+    <nav class="nav-mobile">
+      <div class="menu-hamburguer">
+        <div class="linha1"></div>
+        <div class="linha2"></div>
+        <div class="linha3"></div>
+      </div> 
+
+      <div class="menu-lista">
+        <ul>
+          <li><a href="index.html"> • Início</a></li>
+          <li><a href="cursos.html"> • Cursos</a></li>
+          <li><a href="quemsomos.html"> • Quem Somos?</a></li>
+          <li><a href="depoimentos.html"> • Depoimentos</a></li>
+          <li><a href="contato.html"> • Contato</a></li>
+        </ul>
+        <img src="../assets/logoPrisma2.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
+        <div class="botao-fechar">X
+        </div>
+        <div class="btn-matricula-mob">
+          <a href="#"> Faça sua matrícula </a>
+        </div>
+      </div>
+    </nav>
+    <section class="contato-section">
+        <div class="contato-container">
+            
+            <div class="contato-esquerda">
+                <h1 class="titulo-fale">Fale <span class="destaque-gradiente">Conosco!</span></h1>
+                <ul class="info-lista">
+                    <li><i class="fa-regular fa-envelope icone-contato"></i> <span>atendimento@prisma.br</span></li>
+                    <li><i class="fa-brands fa-whatsapp icone-contato"></i> <span>(61) 99876-5432</span></li>
+                    <li class="endereco-item">
+                        <p><span class="texto-ciano">Endereço:</span> Rua Marechal Deodoro<br>da Fonseca, nº 32,<br>Pindamonhangaba</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contato-centro">
+                <div class="contato-form-box">
+                    <p class="form-descricao">A nossa equipe de suporte está pronta para te ajudar a concluir o próximo nível!</p>
+                    <form action="#" method="POST" class="form-estilizado">
+                        <input type="text" name="nome" placeholder="Nome Completo" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+                        <button type="submit" class="btn-enviar">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contato-direita">
+    
+            </div>
+              <img src="assets/mascoteContato 1.svg" alt="Mascote Prisma Cursos" class="mascote-img">
+        </div>
+    </section>
+
+    <script>
+      const hamburguer = document.querySelector(".menu-hamburguer");
+      const menu = document.querySelector(".menu-lista");
+      const fechar = document.querySelector(".botao-fechar");
+
+      hamburguer.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+      });
+
+      fechar.addEventListener("click", () => {
+        menu.classList.remove("ativo");
+      });
+    </script>
+</body>
+</html>
