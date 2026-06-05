@@ -375,4 +375,16 @@ p {
   display: none;
 }
 
+@media (min-width: 769px) {
+  html, body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto; 
+    height: auto;   
+  }
+}
 }
