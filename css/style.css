@@ -17,10 +17,17 @@ body {
   background-color: var(--fundo-base);
   font-family: var(--fonte);
   color: var(--texto);
+
   min-height: 100vh;
   font-weight: 400;
   position: relative;
   overflow: hidden;
+
+  min-height: 100vh;
+  font-weight: 400;
+  position: relative;
+
+  overflow-x: hidden;
 }
 
 body::before {
@@ -431,7 +438,7 @@ p {
   border-radius: 28px;
   padding: 40px 50px;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 2;
@@ -648,5 +655,205 @@ p {
     margin: 0 auto 40px auto;
     pointer-events: auto;
     animation: none;
+  }
+  /* Cursos */
+
+  .container-cursos {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 20px 0 40px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+  }
+
+  .titulos-pagina-cursos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  .titulos-pagina-cursos h4 {
+    color: var(--roxo);
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .container-cursos::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+
+  .container-cursos a {
+    justify-content: center;
+  }
+  .card {
+    background: linear-gradient(
+      135deg,
+      rgba(30, 27, 75, 0.4) 0%,
+      rgba(15, 23, 42, 0.6) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    min-width: 380px;
+    max-width: 380px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 480px;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-icone {
+    font-size: 48px;
+    color: var(--roxo);
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-weight: 900;
+  }
+
+  .card a {
+    justify-content: center;
+  }
+
+  .card h3 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--texto);
+    min-height: 100px;
+  }
+
+  .seta {
+    font-size: 14px;
+  }
+
+  .btn-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 24px;
+    margin-top: auto;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .btn-cursos:hover {
+    background-color: #4318d4;
+  }
+
+  .card-dropdown {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #a78bfa;
+  }
+
+  .card-dropdown summary {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+    width: 100%;
+    position: relative;
+  }
+
+  .card-dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .card-dropdown summary::after {
+    content: "↓";
+    font-size: 14px;
+    transition: transform 0.2s ease;
+    margin-left: auto;
+  }
+
+  .card-dropdown[open] summary::after {
+    content: "↑";
+  }
+
+  .dropdown-conteudo {
+    margin-top: 8px;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    text-align: left;
+  }
+
+  .preco-destaque {
+    display: block;
+    margin-top: 6px;
+    color: var(--ciano);
+    font-size: 15px;
+  }
+
+  .lado-esquerdo {
+    position: absolute;
+    left: 48px;
+  }
+  .lado-esquerdo h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: -10px;
+    background: linear-gradient(90deg, #a855f7 0%, #371c99 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradiente-legal {
+    background: linear-gradient(90deg, #a855f7 0%, #371c99 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  .lado-direito {
+    position: absolute;
+    right: 48px;
+    width: 452px;
+    font-size: 20px;
+    height: 60px;
+  }
+
+  .card-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-detalhe {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
