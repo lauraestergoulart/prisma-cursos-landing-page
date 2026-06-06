@@ -10,49 +10,47 @@
         
         <title>Perfil</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
-   
-<header>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img src="../assets/logo.svg" alt="Logo Prisma" class="logo" />
+                <ul class="nav-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../cursos.html">Cursos</a></li>
+                    <li><a href="../quemsomos.html">Quem Somos?</a></li>
+                    <li><a href="../depoimentos.html">Depoimentos</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                <a href="#" class="btn-perfil-nav"> Perfil </a>
+            </nav>
 
-    <nav class="navbar">
-        <img src="assets/logo.svg" alt="Logo Prisma" class="logo" />
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="quemsomos.html">Quem Somos?</a></li>
-            <li><a href="depoimentos.html">Depoimentos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <a href="#" class="btn-perfil-nav"> Perfil </a>
-    </nav>
+            <nav class="nav-mobile">
+                <div class="menu-hamburguer">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div> 
 
+                <div class="menu-lista">
+                    <ul>
+                        <li><a href="../index.html"> • Início</a></li>
+                        <li><a href="../cursos.html"> • Cursos</a></li>
+                        <li><a href="../quemsomos.html"> • Quem Somos?</a></li>
+                        <li><a href="../depoimentos.html"> • Depoimentos</a></li>
+                        <li><a href="../contato.html"> • Contato</a></li>
+                    </ul>
+                    <img src="../assets/logo.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
+                </div>
+            </nav>
+        </header>
 
-    <nav class="nav-mobile">
-        <div class="menu-hamburguer">
-            <div class="linha1"></div>
-            <div class="linha2"></div>
-            <div class="linha3"></div>
-        </div> 
-
-        <div class="menu-lista">
-            <ul>
-                <li><a href="index.html"> • Início</a></li>
-                <li><a href="cursos.html"> • Cursos</a></li>
-                <li><a href="quemsomos.html"> • Quem Somos?</a></li>
-                <li><a href="depoimentos.html"> • Depoimentos</a></li>
-                <li><a href="contato.html"> • Contato</a></li>
-            </ul>
-            <img src="assets/logo.svg" alt="Logo Prisma" class="logo-menu-ativo"/>
-        </div>
-    </nav>
-</header>
         <main class="dashboard-container">
-    
             <section class="card area-perfil">
                 <h2>DADOS PESSOAIS</h2>
-                <img src="assets/fotoPerfil.svg" alt="fotoPerfil" class="foto-perfil">
+                <img src="../assets/fotoPerfil.svg" alt="fotoPerfil" class="foto-perfil">
                 <form>
                     <input type="text" placeholder="Nome completo">
                     <input type="email" placeholder="e-mail">
@@ -121,7 +119,7 @@
                     <div class="xp-total" id="xp-contador">0</div>
                     <p>XP TOTAL</p>
                 </div>
-                <img src="assets/mascoteJoia.svg" alt="Mascote Prisma" class="mascote">
+                <img src="../assets/mascoteJoia.svg" alt="Mascote Prisma" class="mascote">
             </section>
 
             <div class="area-missoes">
@@ -133,42 +131,42 @@
                 <div class="cards-loja-container">
                     
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Cupom 10%</p>
                         <span>5000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="5000">Resgatar</button>
                     </div>
 
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Cupom 30%</p>
                         <span>15000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="15000">Resgatar</button>
                     </div>
 
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Caneca do mascote</p>
                         <span>20000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="20000">Resgatar</button>
                     </div>
 
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Moldura de perfil</p>
                         <span>2000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="2000">Resgatar</button>
                     </div>
 
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Masterclass</p>
                         <span>7000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="7000">Resgatar</button>
                     </div>
 
                     <div class="card-recompensa">
-                        <img src="assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
+                        <img src="../assets/etiqueta.svg" alt="Ícone de Recompensa" class="icone-recompensa">
                         <p>Headphone</p>
                         <span>35000 xp</span>
                         <button type="button" class="btn-resgatar" data-custo="35000">Resgatar</button>
@@ -178,7 +176,7 @@
             </section>
         </main>
 
-        <script src="perfil.js"></script>
-        <script src=“../js/xp-perfil.js”></script>
+        <script src="../js/perfil.js"></script>
+        <script src="../js/xp-perfil.js"></script>
     </body>
 </html>
