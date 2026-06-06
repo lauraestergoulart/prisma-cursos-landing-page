@@ -322,6 +322,7 @@ p {
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    margin-top: 30-px;
 }
 
 .cards-loja-container::-webkit-scrollbar {
@@ -657,14 +658,17 @@ p {
 @media (max-width: 768px) {
   html, body {
     overflow: auto; 
-    height: auto;   
+    height: auto;
+    overflow: auto;   
   }
 }
 
 @media (max-width: 768px) {
     .area-loja {
         width: auto;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+    overflow: auto; 
+    height: auto;
 
     }
    
@@ -697,4 +701,5 @@ p {
     white-space: nowrap;  
     margin-left: auto;     
   }
+}
 }
