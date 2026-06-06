@@ -915,6 +915,7 @@ p {
     -webkit-overflow-scrolling: touch;
     width: 90%;
     left: 5%;
+    font-size: 40px;
     position: absolute;
 }
 
@@ -1045,9 +1046,12 @@ p {
 .dropdown-conteudo {
     margin-top: 8px;
     padding-left: 24px;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.5;
-    color: #cbd5e1;
+    background: linear-gradient(90deg, #a855f7 0%, #00d1ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: left;
 }
 
@@ -1094,10 +1098,35 @@ p {
 }
 
 .card-detalhe {
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .container-cursos {
+        width: 80%;
+        left: 10%;
+        padding: 200px 0 20px 0;
+    }
+    .titulos-pagina-cursos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        display: block;
+
+    }
+    .lado-esquerdo h2 {
+        font-size: 20px;
+        position:absolute;
+        display: block;
+    }
+    .lado-direito h3 {
+        font-size: 16px;
+        position:absolute;
+
+    }
 }
