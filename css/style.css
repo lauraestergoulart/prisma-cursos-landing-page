@@ -962,10 +962,11 @@ p {
 
 .card-icone {
     font-size: 48px;
-    color: #a855f7;
+    color: var(--roxo);
     font-family: monospace;
     font-weight: bold;
     margin-bottom: 15px;
+    font-weight: 900;
 }
 
 .card a {
