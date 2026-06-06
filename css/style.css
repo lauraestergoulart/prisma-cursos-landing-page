@@ -974,11 +974,13 @@ p {
 }
 
 .card h3 {
+    text-align: left;
     font-size: 28px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
     color: var(--texto);
+    min-height: 100px;
 }
 
 .seta {
@@ -1015,11 +1017,14 @@ p {
 .card-dropdown summary {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
     cursor: pointer;
     font-weight: 500;
     user-select: none;
+    width: 100%;
+    position: relative;
 }
 
 .card-dropdown summary::-webkit-details-marker {
@@ -1030,6 +1035,7 @@ p {
     content: "↓";
     font-size: 14px;
     transition: transform 0.2s ease;
+    margin-left: auto;
 }
 
 .card-dropdown[open] summary::after {
@@ -1078,4 +1084,20 @@ p {
     width: 452px;
     font-size: 20px;
     height: 60px;
+}
+
+.card-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-detalhe {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
