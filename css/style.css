@@ -19,7 +19,8 @@ body {
     min-height: 100vh;
     font-weight: 400;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -137,9 +138,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-areas: 
         "perfil cursos xp"
-        "missoes loja loja"; /* Mudança sutil aqui: missões na primeira coluna, loja nas duas seguintes */
+        "missoes loja loja";
     gap: 19px; 
-    padding: 40px;
+    padding: 10px 40px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -148,12 +149,16 @@ p {
 .area-cursos { grid-area: cursos; }
 .area-xp { grid-area: xp; text-align: center; }
 .area-missoes { grid-area: missoes; display: flex; align-items: center; justify-content: center; }
+
 .area-loja {
     grid-area: loja;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 31vw;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-bottom: 20px;
 }
 
 .card {
@@ -452,249 +457,101 @@ p {
         left: 20px; 
         right: 20px;
     }
-
-    h1 {
-        font-size: 30px; 
-    }
-
-    h3 {
-        font-size: 24px; 
-    }
-
-    p {
-        font-size: 15px; 
-    }
+    h1 { font-size: 30px; }
+    h3 { font-size: 24px; }
+    p { font-size: 15px; }
+    .area-loja { width: auto; overflow-x: hidden; }
 }
 
-
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 48px;
 }
 
 .logo {
-  width: 200px;
-  height: 112px;
-  object-fit: contain;
+    width: 200px;
+    height: 112px;
+    object-fit: contain;
 }
 
 .nav-links {
-  display: flex;
-  gap: 40px;
-  list-style: none;
+    display: flex;
+    gap: 40px;
+    list-style: none;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: var(--texto);
-  font-size: 20px;
-  font-weight: 400;
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .btn-matricula {
-  width: 264px;
-  height: 60px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-decoration: none;
-  color: var(--texto);
-
-  font-size: 24px;
-  font-weight: 900;
-
-  border-radius: 20px;
-
-  background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
+    width: 264px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 20px;
+    background: radial-gradient(circle, #5b2eff 0%, #371c99 100%);
 }
 
-/* Mobile NavBar */
-.menu-hamburguer {
-  display:none;
-  cursor: pointer;
-}
-.menu-hamburguer div {
-  width: 30px;
-  height: 1px;
-  margin: 8px;
-  background-color: white;
-}
-.menu-lista {
-  display: none;
-}
-.logo-menu-ativo {
-  display:none;
-}
+.menu-hamburguer { display:none; cursor: pointer; }
+.menu-hamburguer div { width: 30px; height: 1px; margin: 8px; background-color: white; }
+.menu-lista { display: none; }
+.logo-menu-ativo { display:none; }
 
 @media (max-width: 1300px) {
-  .navbar {
-    right: 10px;
-    align-items: space-between;
-    justify-content: normal;
-    padding: 0px, 19px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .menu-hamburguer {
-    display: block;
-    top: 20px;
-    left: 27px;
-    position: absolute
-  }
-  .logo {
-    width : 70px;
-    height: 39.36px;
-    position: absolute;
-    right: 220px;
-    top: 15px;
-  }
-  .btn-matricula {
-    width: 201px;
-    height: 37px;
-    font-size: 15.27px;
-    right: 10px;
-    top: 15px;
-    position: absolute;
-    z-index: 1;
-  }
-  .menu-lista {
-    display: flex;
-    position: fixed;
-    font-size: 20px;
-    top: 0px;
-    left: -100%;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, #251365 0%, #0f0829 100%);
-    transition: top 0.3s ease-in-out;
-    z-index: 30;
-  }
-  .menu-lista ul {
-    list-style: none;
-    width: 100%;
-    padding: 20px;
-  }
-  .menu-lista li {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding: 24px 0;
-}
-  .menu-lista a {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-}
-.menu-lista.ativo {
-  left: 0;
-}
-.menu-lista.ativo .logo-menu-ativo {
-  display: block;
-  position: absolute;
-  top: 26px;
-  left: 28px;
-  width: 30px;
-  height: 30px;
-  width: 108px;
-  height: 60.42px;
-}
-.botao-fechar {
-  position: absolute;
-  top: 22px;
-  right: 25px;
-  font-size: 50.93px;
-  cursor: pointer;
-}
-.btn-matricula.mob {
-  width: 201px;
-  height: 37px;
-  font-size: 26px;
-  top: 15px;
-  position: absolute;
-}
+    .navbar { right: 10px; align-items: space-between; justify-content: normal; padding: 0px, 19px; }
+    .nav-links { display: none; }
+    .menu-hamburguer { display: block; top: 20px; left: 27px; position: absolute; }
+    .logo { width: 70px; height: 39.36px; position: absolute; right: 220px; top: 15px; }
+    .btn-matricula { width: 201px; height: 37px; font-size: 15.27px; right: 10px; top: 15px; position: absolute; z-index: 1; }
+    .menu-lista { display: flex; position: fixed; font-size: 20px; top: 0px; left: -100%; height: 100vh; width: 100%; justify-content: center; align-items: center; background: radial-gradient(circle, #251365 0%, #0f0829 100%); transition: top 0.3s ease-in-out; z-index: 30; }
+    .menu-lista ul { list-style: none; width: 100%; padding: 20px; }
+    .menu-lista li { border-bottom: 2px solid rgb(255, 255, 255); padding: 24px 0; }
+    .menu-lista a { color: white; text-decoration: none; font-size: 2rem; font-weight: 600; }
+    .menu-lista.ativo { left: 0; }
+    .menu-lista.ativo .logo-menu-ativo { display: block; position: absolute; top: 26px; left: 28px; width: 108px; height: 60.42px; }
+    .botao-fechar { position: absolute; top: 22px; right: 25px; font-size: 50.93px; cursor: pointer; }
+    .btn-matricula.mob { width: 201px; height: 37px; font-size: 26px; top: 15px; position: absolute; }
 }
 
 .btn-perfil-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  text-decoration: none;
-  font-family: var(--fonte);
- 
-  font-size: 19px;
-  font-weight: 700;
-  
-  background: var(--roxo);  
-  color: var(--ciano);      
-  
- 
-  padding: 12px 32px;
-  
-  border-radius: 50px;      
-  
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn-perfil-nav:hover {
-  background: var(--roxo); 
-  transform: scale(1.02);         
-}
-
-@media (min-width: 769px) {
-  html, body {
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-  html, body {
-    overflow: auto; 
-    height: auto;   
-  }
-}
-
-@media (max-width: 768px) {
-    .area-loja {
-        width: auto;
-    overflow-x: hidden;}
-
-    }
-   
-@media (max-width: 768px) {
-  .navbar {
     display: flex;
-    flex-direction: row;       
-    justify-content: space-between; 
-    align-items: center;        
-    padding: 15px 24px;        
-    width: 100%;
-    box-sizing: border-box;
-  }
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 19px;
+    font-weight: 700;
+    background: var(--roxo); 
+    color: var(--ciano); 
+    padding: 12px 32px;
+    border-radius: 50px; 
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
 
+.btn-perfil-nav:hover { background: var(--roxo); transform: scale(1.02); }
 
-  .logo {
-    max-width: 120px;         
-    height: auto;
-  }
-
-  
-  .nav-links {
-    display: none;
-  }
-
-  
-  .btn-perfil-nav {
-    padding: 8px 20px;         
-    font-size: 14px;           
-    white-space: nowrap;  
-    margin-left: auto;     
-  }
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px 24px; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .logo { max-width: 120px; height: auto; }
+    .nav-links { display: none; }
+    .btn-perfil-nav { padding: 8px 20px; font-size: 14px; white-space: nowrap; margin-left: auto; }
 }
